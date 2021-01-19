@@ -1,0 +1,157 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 15px 20px;
+}
+
+header a { 
+    color: #F9FFED;
+    margin-right: 15px;
+}
+
+header a:hover {
+    color: #686868;
+}
+
+header .img-wrapper {
+    height: 100%;
+    width: 7rem;
+    margin: 15px 40px ;
+}
+
+header .img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+header .primary-navigation {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+header .dropdown i{
+    margin-left: 10px;
+    top: 0;
+}
+header .dropdown {
+    display: none;
+}
+
+header .dropbtn {
+    cursor: pointer;
+}
+  
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black);
+    opacity: .8;
+    text-align: center;
+    width: 150px;
+    z-index: 1;
+}
+  
+header .dropdown-content a {
+    color: #F9FFED;
+    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    transition: .3s ease all;
+}
+  
+header .dropdown-content a:hover {
+    background-color: white;
+    color: black;
+}
+  
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* filme principal */
+
+.filme-principal {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../img/creedII-background.jpg");
+    background-size: cover;
+    height: 500px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .botao {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all;
+}
+
+.filme-principal .botao:hover {
+    color: black;
+    background-color: white;
+}
+
+.filme-principal .botao i {
+    margin-right: 8px;
+}
+
+.filme-principal .container {
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin: 5px 0;
+}
